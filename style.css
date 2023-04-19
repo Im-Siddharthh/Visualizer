@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+header {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  color: #383737;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 25vh;
+}
+
+main {
+  padding: 20px;
+  height: 55vh;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  color: #383737;
+  padding: 20px;
+  text-align: center;
+  height: 18vh;
+}
+
+footer .credit {
+  margin-top: 25px;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  border-top: 0.1rem solid #fff3;
+}
+footer .credit a {
+  color: #ffffff;
+}
+footer .credit .fa {
+  color: #e90606;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-image: linear-gradient(to top left, #39b385, #9be15d); */
+  background-color: #f3f3f3;
+}
+
+/* .box {
+  height: 295px;
+  width: 300px;
+}
+
+#prime {
+  background-image: url(./number_spiral.png);
+  background-size: cover;
+}
+
+#sorting {
+  background-image: url(./unnamed.png);
+  background-size: contain;
+}
+
+#sudoku {
+  background-image: url(./Sudoku.jpg);
+  background-size: cover;
+} */
+
+/*
+
+*/
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.box-container .box {
+  flex: 1 1 1;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 290px;
+}
+.box-container .box img {
+  height: 295px;
+  width: 300px;
+  object-fit: contain;
+}
+.box-container .box .content {
+  min-height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+.box-container .box .content .tag {
+  height: 60px;
+  width: 300px;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  color: #383737;
+  text-align: center;
+}
+.box-container .box .content .tag h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.box-container .box:hover .content {
+  top: 45%;
+  transition-duration: 0.5s;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.desc p {
+  font-size: 1.2rem;
+}
+.desc .btns {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+.desc .btns .btn {
+  line-height: 0;
+  display: inline;
+  padding: 15px 10px 0px 10px;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}

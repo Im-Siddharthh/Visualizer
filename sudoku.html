@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sudoku/sudoku.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sudoku Solver</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sudoku Solver</h1>
+    </header>
+
+    <div class="container">
+      <div class="home_container">
+        <div class="half" id="half1">
+          <table class="sudoku" id="sudoku"></table>
+        </div>
+
+        <div class="half" id="half2">
+          <button id="solve" class="button">Visualize</button>
+          <button id="generate" class="button">Generate</button>
+          <button id="clear" class="button">Clear</button>
+          <button id="home" class="button">Home</button>
+
+          <div class="status-row">
+            <h2 id="sudoku-status"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a
+          href="https://www.linkedin.com/in/siddharth2119chauhan/"
+          target="_blank"
+        >
+          Siddharth Chauhan</a
+        >
+      </h1>
+    </footer>
+    <script src="sudoku/sudoku.js"></script>
+  </body>
+</html>
