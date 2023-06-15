@@ -1,47 +1,41 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: poppins;
-  line-height: 1.5;
-  height: 100vh;
+  position: relative;
 }
 
 header {
   background-image: linear-gradient(to top left, #39b385, #9be15d);
   color: #383737;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
-  font-size: 1.5rem;
-  height: 25vh;
+  font-size: 1rem;
+  min-height: 100px;
 }
 
 main {
-  padding: 20px;
-  height: 55vh;
-}
-
-section {
-  margin-bottom: 20px;
+  padding: 15px;
+  min-height: 300px;
 }
 
 h2 {
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-footer {
+/* footer {
   background-image: linear-gradient(to top left, #39b385, #9be15d);
   color: #383737;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
-  height: 18vh;
-  margin-top: 10px;
-}
-
+  margin-top: 5px;
+} */
+/* 
 footer .credit {
   margin-top: 25px;
   padding: 1rem 0 0 0;
@@ -58,40 +52,15 @@ footer .credit .fa {
   color: #e90606;
   margin: 0 0.3rem;
   font-size: 1.5rem;
-}
+} */
 
 .container {
   height: 325px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-image: linear-gradient(to top left, #39b385, #9be15d); */
   background-color: #f3f3f3;
 }
-
-/* .box {
-  height: 295px;
-  width: 300px;
-}
-
-#prime {
-  background-image: url(./number_spiral.png);
-  background-size: cover;
-}
-
-#sorting {
-  background-image: url(./unnamed.png);
-  background-size: contain;
-}
-
-#sudoku {
-  background-image: url(./Sudoku.jpg);
-  background-size: cover;
-} */
-
-/*
-
-*/
 
 .box-container {
   display: flex;
@@ -103,7 +72,6 @@ footer .credit .fa {
 .box-container .box {
   flex: 1 1 1;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   height: 290px;
@@ -160,4 +128,42 @@ footer .credit .fa {
   font-size: 1.2rem;
   color: #fff;
   background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    /* height: 20vh; */
+  }
+
+  .container {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    width: 310px;
+
+  }
+  .box-container .box {
+    /* flex: 1 1 100%; */
+    height: auto;
+    width: 310px;
+    margin-bottom: 1.5rem;
+    justify-content: center ;
+  }
+  .box-container .box img {
+    height: auto;
+    width: 300px  ;
+  }
+  .box-container .box .content {
+    position: static;
+    background: transparent;
+    padding: 1rem;
+    width: 310px;
+    height: auto;
+  }
+  .box-container .box:hover .content {
+    top: 100%;
+  }
 }
