@@ -31,8 +31,8 @@ function toArray(str) {
     un_array[x] = parseFloat(str[x]);
   }
 
-  if (un_array.length > 16) {
-    alert("max array size: 15");
+  if (un_array.length > 13) {
+    alert("max array size: 12");
     arrayBox.value = "";
   } else {
     flag = true;
